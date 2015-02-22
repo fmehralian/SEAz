@@ -3,6 +3,7 @@ class Test
     public static void main(String[] args)
     {
         testSum();
+        testSub();
     }
 
     private static void testSum()
