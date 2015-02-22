@@ -3,6 +3,7 @@ class Test
     public static void main(String[] args)
     {
         testSum();
+        testMul();
     }
 
     private static void testSum()
@@ -19,6 +20,22 @@ class Test
         else
         {
             System.out.println("Sum: Failed, expected = " + expected + ", result = " + result);
+        }
+    }
+    private static void testMul()
+    {
+        int a = 2;
+        int b = 3;
+        int expected = 6;
+        BasicMath bm = new BasicMath();
+        int result = bm.mul(a, b);
+        if (result == expected)
+        {
+            System.out.println("Mul: OK");
+        }
+        else
+        {
+            System.out.println("Mul: Failed, expected = " + expected + ", result = " + result);
         }
     }
 }
